@@ -10,7 +10,8 @@ def decimate_obj(obj, ratio):
 if bpy.context.selected_objects:
     for obj in bpy.context.selected_objects:
         if obj.type == "MESH":
-            decimate_obj(obj, 0.3)
+            decimate_obj(obj, 0.25)
+            #obj.modifiers.active()
         else:
             print("!!!The object {} is not of type MESH!!!".format(obj.name))
     

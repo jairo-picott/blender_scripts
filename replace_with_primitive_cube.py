@@ -18,7 +18,8 @@ def create_cube_and_hide(obj):
     else:
         cube.name = "c{}".format(obj.name)
     #cube.name_full = "c{}".format(obj.name_full)
-    cube.rotation_axis_angle = obj.rotation_axis_angle
+    cube.rotation_euler = obj.rotation_euler
+
 
     #Hide the original
     obj.hide_set(True)

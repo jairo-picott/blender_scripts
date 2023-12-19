@@ -3,7 +3,10 @@ import os
 
 def triangle_count(obj):
     mesh = obj.data
-    return sum(len(p.vertices) - 2 for p in mesh.polygons)
+    if mesh.polygons:
+        return sum(len(p.vertices) - 2 for p in mesh.polygons)
+    else:
+        return -1
 
 #mesh_objects = [obj for obj bpy.context.scene.objects if obj.type == 'MESH']
 
@@ -15,7 +18,7 @@ from_collection = True
 
 if from_collection:
     print('From collection')
-    collection_name = "L1"
+    collection_name = "Collection"
     collection = bpy.data.collections.get(collection_name)
 
     if collection:

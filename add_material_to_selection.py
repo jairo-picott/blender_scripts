@@ -1,6 +1,6 @@
 import bpy
 
-#material = bpy.data.materials.new(name="WhitePainting")
+#material = bpy.data.materials.new(name="Steel")
 material = bpy.data.materials.get("Steel")
 
 if bpy.context.selected_objects:

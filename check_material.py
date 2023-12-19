@@ -1,7 +1,7 @@
 import bpy
 
 
-collection_name = "L1"
+collection_name = "Collection"
 collection = bpy.data.collections.get(collection_name)
 
 count = 0
